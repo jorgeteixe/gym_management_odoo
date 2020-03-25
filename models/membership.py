@@ -17,4 +17,4 @@ class Membership(models.Model):
     def _full_name(self):
         for r in self:
             if r.title and r.price:
-                r.name = r.title + ' [' + r.price + ']'
+                r.name = r.title + ' [' + str(r.price) + ']'
