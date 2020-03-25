@@ -19,4 +19,4 @@ class Class(models.Model):
     def _full_name(self):
         for r in self:
             if r.title and r.teacher_id:
-                r.name = r.title + ' ' + r.teacher_id
+                r.name = r.title + ' ' + r.teacher_id.name
