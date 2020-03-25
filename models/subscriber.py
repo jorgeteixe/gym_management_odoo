@@ -13,7 +13,7 @@ class Subscriber(models.Model):
     phone = fields.Char(string = 'Phone number')
     email = fields.Char(string = 'Email', required = True)
 
-    membership_id = fields.Many2one('gym.membership', ondelete='restrict', string='Membership')
+    membership_id = fields.Many2one('gym.membership', ondelete='restrict', string='Membership', required = True)
 
     session_ids = fields.One2many('gym.session', 'class_id', string = 'Sessions')
 

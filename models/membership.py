@@ -7,7 +7,7 @@ class Membership(models.Model):
     _name = 'gym.membership'
 
     name = fields.Char(compute = '_full_name')
-    title = fields.Char(string = 'Name')
+    title = fields.Char(string = 'Name', required = True)
     description = fields.Text(string = 'Description')
     price = fields.Float(string='Price', digits=(5, 2), default=39.90, required=True)
 

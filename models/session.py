@@ -13,13 +13,13 @@ class Session(models.Model):
     duration = fields.Integer(string = 'Duration (minutes)', required = True)
     end_date = fields.Datetime(string="End date", store=True, compute='_get_end_date')
 
-    class_id = fields.Many2one('gym.class', ondelete='restrict', string='Class')
+    class_id = fields.Many2one('gym.class', ondelete='restrict', string='Class', required = True)
 
     subscribers_ids = fields.Many2many('gym.subscriber', string = 'Subscribers',
                                        relation = 'gym_session_subscribers', ondelete = 'set null',
                                        column1 = 'session_id', column2 = 'subscriber_id')
 
-    room_id = fields.Many2one('gym.room', ondelete='restrict', string='Room')
+    room_id = fields.Many2one('gym.room', ondelete='restrict', string='Room', required = True)
 
     @api.depends('start_date', 'class_id')
     def _full_name(self):

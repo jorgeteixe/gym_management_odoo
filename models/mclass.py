@@ -10,7 +10,7 @@ class Class(models.Model):
     title = fields.Char(string = 'Name', required = True)
     price = fields.Float(string='Session price', digits=(5, 2), default=4.90, required=True)
 
-    teacher_id = fields.Many2one('gym.teacher', ondelete='restrict', string='Teacher')
+    teacher_id = fields.Many2one('gym.teacher', ondelete='restrict', string='Teacher', required = True)
 
     session_ids = fields.One2many('gym.session', 'class_id', string = 'Sessions')
 
