@@ -32,7 +32,7 @@ class Session(models.Model):
             duration = timedelta(minutes=r.duration)
             r.end_date = r.start_date + duration
 
-    @api.constraint('duration')
+    @api.constrains('duration')
     def _max_duration(self):
         for r in self:
             if 120 <= r.duration < 10:
