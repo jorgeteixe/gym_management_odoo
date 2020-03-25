@@ -21,7 +21,7 @@ class Session(models.Model):
 
     room_id = fields.Many2one('gym.room', ondelete='restrict', string='Room')
 
-    @api.depends('date', 'class')
+    @api.depends('start_date', 'class')
     def _full_name(self):
         for r in self:
             r.name = r.start_date + ' ' + r.class_id
