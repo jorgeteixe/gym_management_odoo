@@ -15,7 +15,7 @@ class Class(models.Model):
     session_ids = fields.One2many('gym.session', 'class_id', string = 'Sessions')
 
 
-    @api.depends('title', 'teacher')
+    @api.depends('title', 'teacher_id')
     def _full_name(self):
         for r in self:
-            r.name = r.title + ' ' + r.teacher
+            r.name = r.title + ' ' + r.teacher_id
