@@ -9,4 +9,4 @@ class Room(models.Model):
     name = fields.Char(string = 'Name', required = True)
     description = fields.Text(string = 'Description')
 
-    session_ids = fields.Many2one()
+    session_ids = fields.Many2one('gym.session', 'room_id', string = 'Sessions')
