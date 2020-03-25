@@ -7,7 +7,7 @@ class Class(models.Model):
     _name = 'gym.class'
 
     name = fields.Char(compute = '_full_name')
-    title = fields.Char(string = 'Name', required = True)
+    title = fields.Char(string = 'Class title', required = True)
     price = fields.Float(string='Session price', digits=(5, 2), default=4.90, required=True)
 
     teacher_id = fields.Many2one('gym.teacher', ondelete='restrict', string='Teacher', required = True)
