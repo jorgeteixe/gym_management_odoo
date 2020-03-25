@@ -24,17 +24,20 @@ class Session(models.Model):
     @api.depends('start_date', 'class_id')
     def _full_name(self):
         for r in self:
-            r.name = r.start_date + ' ' + r.class_id
+            if r.start_date and r.class_id:
+                r.name = r.start_date + ' ' + r.class_id
 
     @api.depends('start_date', 'duration')
     def _get_end_date(self):
         for r in self:
-            duration = timedelta(minutes=r.duration)
-            r.end_date = r.start_date + duration
+            if r.duration and r.start_date:
+                duration = timedelta(minutes=r.duration)
+                r.end_date = r.start_date + duration
 
     @api.constrains('duration')
     def _max_duration(self):
         for r in self:
-            if 120 <= r.duration < 10:
-                raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
+            if r.duration:
+                if 120 <= r.duration < 10:
+                    raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
 
