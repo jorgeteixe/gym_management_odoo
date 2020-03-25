@@ -1,22 +1,19 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "JorgeTeixeiraCrespo",
+    'name': "Gym management",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Simple module to manage gym memberships and additional classes""",
 
     'description': """
-        Long description of module's purpose
+        With this module you're able to create different memberships, the subscribers are allowed to select the sessions
+        that they're going and check their billing.
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Jorge Teixeira",
+    'website': "http://jorgeteixeira.es",
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
+    'category': 'Events',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -24,12 +21,11 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
+        # 'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        # 'demo/demo.xml',
     ],
 }
