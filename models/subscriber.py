@@ -8,7 +8,7 @@ class Subscriber(models.Model):
     _sql_constraints = [('unique_mail', 'unique(email)', 'This email already exists')]
 
     name = fields.Char(string = 'Name', required = True)
-    id = fields.Char(string = 'ID Number', required = True)
+    id_number = fields.Char(string = 'ID Number', required = True)
     address = fields.Text(string = 'Address')
     phone = fields.Char(string = 'Phone number')
     email = fields.Char(string = 'Email', required = True)
