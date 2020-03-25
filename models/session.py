@@ -25,7 +25,7 @@ class Session(models.Model):
     def _full_name(self):
         for r in self:
             if r.start_date and r.class_id:
-                r.name = r.start_date + ' ' + r.class_id
+                r.name = r.start_date.strftime("%m/%d/%Y, %H:%M:%S") + ' - ' + r.class_id
 
     @api.depends('start_date', 'duration')
     def _get_end_date(self):
