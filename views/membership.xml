@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="membership_list_action">
+            <field name="name">Membership list</field>
+            <field name="res_model">gym.membership</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No records yet!</p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="membership_form_view">
+            <field name="name">membership.form</field>
+            <field name="model">gym.membership</field>
+            <field name="arch" type="xml">
+                <form string="Membership form">
+                    <sheet>
+                        <notebook>
+                            <page string="Data">
+                                <group>
+                                    <field name="name" />
+                                    <field name="description" />
+                                    <field name="price" />
+                                </group>
+                            </page>
+                            <page string="Subscribers">
+                                <group>
+                                    <field name="subscriber_ids" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="membership_tree_view">
+            <field name="name">membership.tree</field>
+            <field name="model">gym.membership</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="name" />
+                    <field name="title" />
+                    <field name="price" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="membership_search_view">
+            <field name="name">membership.search</field>
+            <field name="model">gym.membership</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="title" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

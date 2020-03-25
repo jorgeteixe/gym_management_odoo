@@ -1,1 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gym_class,gym.class,model_gym_class,base.group_user,1,1,1,1
+gym_membership,gym.membership,model_gym_membership,base.group_user,1,1,1,1
+gym_room,gym.room,model_gym_room,base.group_user,1,1,1,1
+gym_session,gym.session,model_gym_session,base.group_user,1,1,1,1
+gym_teacher,gym.teacher,model_gym_teacher,base.group_user,1,1,1,1
+gym_subscriber,gym.subscriber,model_gym_subscriber,base.group_user,1,1,1,1

@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="subscriber_list_action">
+            <field name="name">Subscriber list</field>
+            <field name="res_model">gym.subscriber</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No records yet!</p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="subscriber_form_view">
+            <field name="name">subscriber.form</field>
+            <field name="model">gym.subscriber</field>
+            <field name="arch" type="xml">
+                <form string="Subscriber form">
+                    <sheet>
+                        <notebook>
+                            <page string="Data">
+                                <group>
+                                    <field name="name"/>
+                                    <field name="email"/>
+                                    <field name="id"/>
+                                    <field name="address"/>
+                                    <field name="phone"/>
+                                    <field name="email"/>
+                                    <field name="membership"/>
+                                </group>
+                            </page>
+                            <page string="Sessions">
+                                <group>
+                                    <field name="session_ids"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="subscriber_tree_view">
+            <field name="name">subscriber.tree</field>
+            <field name="model">gym.subscriber</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="id"/>
+                    <field name="email"/>
+                    <field name="membership"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="subscriber_search_view">
+            <field name="name">subscriber.search</field>
+            <field name="model">gym.subscriber</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="id"/>
+                    <field name="membership"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

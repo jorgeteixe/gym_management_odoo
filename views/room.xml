@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="room_list_action">
+            <field name="name">Room list</field>
+            <field name="res_model">gym.room</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No records yet!</p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="room_form_view">
+            <field name="name">room.form</field>
+            <field name="model">gym.room</field>
+            <field name="arch" type="xml">
+                <form string="Room form">
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                    <group>
+                        <field name="session_ids" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="room_tree_view">
+            <field name="name">room.tree</field>
+            <field name="model">gym.room</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="name" />
+                    <field name="description" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="room_search_view">
+            <field name="name">room.search</field>
+            <field name="model">gym.room</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="description" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>
