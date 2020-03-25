@@ -18,4 +18,4 @@ class Class(models.Model):
     @api.depends('title', 'teacher_id')
     def _full_name(self):
         for r in self:
-            r.name = r.title + ' ' + r.teacher_id
+            r.name = r.title + ' ' + r.teacher_id.name
