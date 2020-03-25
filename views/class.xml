@@ -56,7 +56,7 @@
                 <search>
                     <field name="title"/>
                     <field name="name"/>
-                    <field name="teacher"/>
+                    <field name="teacher_id"/>
                 </search>
             </field>
         </record>
