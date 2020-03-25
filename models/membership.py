@@ -16,4 +16,5 @@ class Membership(models.Model):
     @api.depends('title', 'price')
     def _full_name(self):
         for r in self:
-            r.name = r.title + ' [' + r.price + ']'
+            if r.title and r.price:
+                r.name = r.title + ' [' + r.price + ']'
