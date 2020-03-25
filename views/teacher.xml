@@ -25,7 +25,7 @@
                                     <field name="address"/>
                                     <field name="phone"/>
                                     <field name="email"/>
-                                    <field name="membership"/>
+                                    <field name="membership_id"/>
                                 </group>
                             </page>
                             <page string="Sessions">
@@ -53,7 +53,7 @@
                     <field name="email"/>
                     <field name="id"/>
                     <field name="email"/>
-                    <field name="membership"/>
+                    <field name="membership_id"/>
                 </tree>
             </field>
         </record>
@@ -66,7 +66,7 @@
                     <field name="name"/>
                     <field name="email"/>
                     <field name="id"/>
-                    <field name="membership"/>
+                    <field name="membership_id"/>
                 </search>
             </field>
         </record>
