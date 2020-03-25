@@ -5,6 +5,7 @@
         <menuitem id="menu_subscriber_sub" name="Subscribers" parent="menu_subscriber" action="subscriber_list_action"/>
         <menuitem id="menu_subscriber_teach" name="Teachers" parent="menu_subscriber" action="teacher_list_action"/>
         <menuitem id="menu_membership" name="Membership" parent="main_menu_gym" action="membership_list_action"/>
+        <menuitem id="menu_class" name="Class" parent="main_menu_gym" action="class_list_action"/>
         <menuitem id="menu_sessions" name="Sessions" parent="main_menu_gym" />
         <menuitem id="menu_sessions_sessions" name="Sessions" parent="menu_sessions" action="session_list_action"/>
         <menuitem id="menu_sessions_rooms" name="Rooms" parent="menu_sessions" action="room_list_action"/>
