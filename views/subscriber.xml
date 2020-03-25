@@ -24,7 +24,6 @@
                                     <field name="id_number"/>
                                     <field name="address"/>
                                     <field name="phone"/>
-                                    <field name="email"/>
                                     <field name="membership_id"/>
                                 </group>
                             </page>
@@ -47,7 +46,6 @@
                     <field name="name"/>
                     <field name="email"/>
                     <field name="id_number"/>
-                    <field name="email"/>
                     <field name="membership_id"/>
                 </tree>
             </field>
