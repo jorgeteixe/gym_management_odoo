@@ -24,7 +24,7 @@ class Session(models.Model):
     @api.depends('date', 'class')
     def _full_name(self):
         for r in self:
-            r.name = r.date + ' ' + r.class_id
+            r.name = r.start_date + ' ' + r.class_id
 
     @api.depends('start_date', 'duration')
     def _get_end_date(self):
