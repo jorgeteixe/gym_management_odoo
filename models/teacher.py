@@ -9,4 +9,4 @@ class Teacher(models.Model):
 
     class_ids = fields.One2many('gym.class', 'teacher_id', string = 'Classes')
 
-    membership_id = fields.Many2one('gym.membership', ondelete='restrict', string='Membership', domain="[('price','=',0)]")
+    membership_id = fields.Many2one('gym.membership', ondelete='restrict', string='Membership', domain="[('price','=',0)]", required = False)
