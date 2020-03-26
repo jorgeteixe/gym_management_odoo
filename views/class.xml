@@ -23,9 +23,9 @@
                             <page string="Data">
                                 <group col="4" colspan="4">
                                     <field name="title"/>
-                                    <field name="currency_id" invisible="1"/>
                                     <field name="price" widget="monetary"/>
                                     <field name="teacher_id"/>
+                                    <field name="currency_id" invisible="1"/>
                                 </group>
                             </page>
                             <page string="Sessions">
