@@ -18,18 +18,21 @@
                     <sheet>
                         <notebook>
                             <page string="Data">
-                                <group>
+                                <group col="2">
                                     <field name="name"/>
+                                    <field name="class_id"/>
+                                    <field name="room_id"/>
+                                </group>
+                                <separator string="Date and time"/>
+                                <group col="4" colspan="4">
                                     <field name="start_date"/>
                                     <field name="duration"/>
                                     <field name="end_date"/>
-                                    <field name="class_id"/>
-                                    <field name="room_id"/>
                                 </group>
                             </page>
                             <page string="Assistants">
                                 <group>
-                                    <field name="subscribers_ids"/>
+                                    <field name="subscribers_ids" nolabel="1"/>
                                 </group>
                             </page>
                         </notebook>
