@@ -15,7 +15,7 @@
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//page[@id='sessions']" position="after">
+                <xpath expr="//page[@id='sessions']" position="replace">
                     <page string="More info">
                         <separator string="Classes"/>
                         <group>
