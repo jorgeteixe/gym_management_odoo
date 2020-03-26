@@ -17,8 +17,8 @@
                 <form string="Subscriber form">
                     <sheet>
                         <h1>
-                            <label for="name" class="oe_edit_only" />
-                            <field name="name" />
+                            <label for="name" class="oe_edit_only"/>
+                            <field name="name"/>
                         </h1>
                         <notebook>
                             <page string="Data">
@@ -33,7 +33,7 @@
                                 </group>
                             </page>
                             <page string="Sessions">
- <field name="inherit_id" ref="id_category_list"/>                               <group>
+                                <group>
                                     <field name="session_ids" nolabel="1"/>
                                 </group>
                             </page>
