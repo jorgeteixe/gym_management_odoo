@@ -16,17 +16,20 @@
             <field name="arch" type="xml">
                 <form string="Membership form">
                     <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
                         <notebook>
                             <page string="Data">
                                 <group>
-                                    <field name="name" />
-                                    <field name="description" />
-                                    <field name="price" />
+                                    <field name="title"/>
+                                    <field name="description"/>
+                                    <field name="price"/>
                                 </group>
                             </page>
                             <page string="Subscribers">
                                 <group>
-                                    <field name="subscriber_ids" />
+                                    <field name="subscriber_ids"/>
                                 </group>
                             </page>
                         </notebook>
@@ -40,9 +43,9 @@
             <field name="model">gym.membership</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" />
-                    <field name="title" />
-                    <field name="price" />
+                    <field name="name"/>
+                    <field name="title"/>
+                    <field name="price"/>
                 </tree>
             </field>
         </record>
@@ -52,7 +55,8 @@
             <field name="model">gym.membership</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="title" />
+                    <field name="title"/>
+                    <field name="price"/>
                 </search>
             </field>
         </record>
