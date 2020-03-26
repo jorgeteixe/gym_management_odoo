@@ -22,12 +22,14 @@
                         </h1>
                         <notebook>
                             <page string="Data">
-                                <group>
+                                <group col="4" colspan="2">
                                     <field name="email"/>
                                     <field name="id_number"/>
-                                    <field name="address"/>
                                     <field name="phone"/>
                                     <field name="membership_id"/>
+                                </group>
+                                <group colspan="4">
+                                    <field name="address"/>
                                 </group>
                             </page>
                             <page string="Sessions">
