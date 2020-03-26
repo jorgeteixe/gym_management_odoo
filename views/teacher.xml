@@ -13,13 +13,16 @@
         <record model="ir.ui.view" id="teacher_form_view">
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
-            <field name="inherit_id" ref="subscriber_form_view"/>
+            <field name="inherit_id" ref="gym.subscriber_form_view"/>
+            <field name="type">form</field>
             <field name="arch" type="xml">
-                <notebook position="inside">
-                    <page string="Classes">
-                        <field name="class_ids" string="Number of ideas"/>
-                    </page>
-                </notebook>
+                <data>
+                    <notebook position="inside">
+                        <page string="Classes">
+                            <field name="class_ids" string="Number of ideas"/>
+                        </page>
+                    </notebook>
+                </data>
             </field>
         </record>
 
