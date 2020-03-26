@@ -16,8 +16,9 @@
             <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="type">form</field>
             <field name="arch" type="xml">
-                <xpath expr="//notebook" position="inside">
-                    <field name="class_ids" />
+                <xpath expr="//page[@id='sessions']" position="after">
+                    <page string="Classes">
+                    <field name="class_ids" /></page>
                 </xpath>
             </field>
         </record>
