@@ -16,10 +16,12 @@
             <field name="arch" type="xml">
                 <form string="Session form">
                     <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
                         <notebook>
                             <page string="Data">
                                 <group col="2">
-                                    <field name="name"/>
                                     <field name="class_id"/>
                                     <field name="room_id"/>
                                 </group>
