@@ -9,7 +9,8 @@ class Membership(models.Model):
     name = fields.Char(compute = '_full_name')
     title = fields.Char(string = 'Name', required = True)
     description = fields.Text(string = 'Description')
-    price = fields.Float(string='Price', digits=(5, 2), default=39.90, required=True)
+    currency_id = fields.Many2one('res.currency', default=lambda self: self.env['res.currency'].search([('name', '=', "EUR")], limit=1))
+    price = fields.Monetary('Price', 'currency_id', default=39.90, required=True)
 
     subscriber_ids = fields.One2many('gym.subscriber', 'membership_id', string = 'Subscribers')
 
