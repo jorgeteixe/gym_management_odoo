@@ -16,10 +16,12 @@
             <field name="arch" type="xml">
                 <form string="Subscriber form">
                     <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
                         <notebook>
                             <page string="Data">
                                 <group>
-                                    <field name="name"/>
                                     <field name="email"/>
                                     <field name="id_number"/>
                                     <field name="address"/>
