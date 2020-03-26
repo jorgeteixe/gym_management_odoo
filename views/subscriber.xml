@@ -17,7 +17,8 @@
                 <form string="Subscriber form">
                     <sheet>
                         <h1>
-                            <field name="name"/>
+                            <label for="name" class="oe_edit_only" />
+                            <field name="name" />
                         </h1>
                         <notebook>
                             <page string="Data">
