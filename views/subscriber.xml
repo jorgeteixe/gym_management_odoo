@@ -32,7 +32,7 @@
                                     <field name="address"/>
                                 </group>
                             </page>
-                            <page string="Sessions">
+                            <page id="sessions" string="Sessions">
                                 <group>
                                     <field name="session_ids" nolabel="1"/>
                                 </group>
