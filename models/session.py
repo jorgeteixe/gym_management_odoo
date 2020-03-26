@@ -37,9 +37,5 @@ class Session(models.Model):
     @api.constrains('duration')
     def _max_duration(self):
         for r in self:
-            if r.duration:
-                if r.duration < 10:
-                    raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
-                if r.duration > 120:
-                    raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
-
+            if r.duration < 10 or r.duration > 120:
+                raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
