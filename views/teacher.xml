@@ -15,11 +15,11 @@
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//notebook]" position="after">
+                <notebook position="inside">
                     <page string="Classes">
                         <field name="class_ids" string="Number of ideas"/>
                     </page>
-                </xpath>
+                </notebook>
             </field>
         </record>
 
