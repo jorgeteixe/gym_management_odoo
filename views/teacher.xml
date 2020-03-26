@@ -13,7 +13,7 @@
         <record model="ir.ui.view" id="teacher_form_view">
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
-            <field name="inherit_id" ref="gym.subscriber_form_view"/>
+            <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <data>
