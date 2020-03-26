@@ -14,7 +14,6 @@
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
-            <field name="type">form</field>
         </record>
 
         <record model="ir.ui.view" id="teacher_tree_view">
