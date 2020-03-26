@@ -38,6 +38,8 @@ class Session(models.Model):
     def _max_duration(self):
         for r in self:
             if r.duration:
-                if 120 <= r.duration < 10:
+                if r.duration < 10:
+                    raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
+                if r.duration > 120:
                     raise ValidationError('Duration is not correct, has to be between 10 and 120 minutes.')
 
