@@ -32,7 +32,7 @@
                             </page>
                             <page string="Subscribers">
                                 <group>
-                                    <field name="subscriber_ids"/>
+                                    <field name="subscriber_ids" nolabel="1"/>
                                 </group>
                             </page>
                         </notebook>
