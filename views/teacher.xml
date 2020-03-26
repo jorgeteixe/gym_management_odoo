@@ -34,12 +34,12 @@
                             </page>
                             <page string="Sessions">
                                 <group>
-                                    <field name="session_ids"/>
+                                    <field name="session_ids" nolabel="1"/>
                                 </group>
                             </page>
                             <page string="Classes">
                                 <group>
-                                    <field name="class_ids"/>
+                                    <field name="class_ids" nolabel="1"/>
                                 </group>
                             </page>
                         </notebook>
