@@ -23,7 +23,8 @@
                             <page string="Data">
                                 <group>
                                     <field name="title"/>
-                                    <field name="price" widget='monetary'/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="price" widget="monetary"/>
                                     <field name="teacher_id"/>
                                 </group>
                             </page>
@@ -44,7 +45,8 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="price" widget='monetary'/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="price" widget="monetary"/>
                 </tree>
             </field>
         </record>

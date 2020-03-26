@@ -24,7 +24,8 @@
                                 <group>
                                     <field name="title"/>
                                     <field name="description"/>
-                                    <field name="price" widget='monetary'/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="price" widget="monetary"/>
                                 </group>
                             </page>
                             <page string="Subscribers">
@@ -45,7 +46,8 @@
                 <tree>
                     <field name="name"/>
                     <field name="title"/>
-                    <field name="price" widget='monetary'/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="price" widget="monetary"/>
                 </tree>
             </field>
         </record>
