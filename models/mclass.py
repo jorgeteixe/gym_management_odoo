@@ -8,7 +8,8 @@ class Class(models.Model):
 
     name = fields.Char(compute = '_full_name')
     title = fields.Char(string = 'Class title', required = True)
-    price = fields.Float(string='Session price', digits=(5, 2), default=4.90, required=True)
+    currency_id = fields.Many2one('res.currency', default=lambda self: self.env['res.currency'].search([('name', '=', "EUR")], limit=1))
+    price = fields.Monetary('Price', 'currency_id', default=4.90, required=True)
 
     teacher_id = fields.Many2one('gym.teacher', ondelete='restrict', string='Teacher', required = True)
 
