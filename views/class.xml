@@ -16,10 +16,12 @@
             <field name="arch" type="xml">
                 <form string="Class form">
                     <sheet>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
                         <notebook>
                             <page string="Data">
                                 <group>
-                                    <field name="name"/>
                                     <field name="title"/>
                                     <field name="price"/>
                                     <field name="teacher_id"/>
@@ -42,9 +44,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="title"/>
                     <field name="price"/>
-                    <field name="teacher_id"/>
                 </tree>
             </field>
         </record>
