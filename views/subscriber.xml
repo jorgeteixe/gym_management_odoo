@@ -33,7 +33,7 @@
                                 </group>
                             </page>
                             <page string="Sessions">
-                                <group>
+ <field name="inherit_id" ref="id_category_list"/>                               <group>
                                     <field name="session_ids" nolabel="1"/>
                                 </group>
                             </page>

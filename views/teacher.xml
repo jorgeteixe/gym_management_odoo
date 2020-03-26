@@ -13,38 +13,13 @@
         <record model="ir.ui.view" id="teacher_form_view">
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
+            <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="arch" type="xml">
-                <form string="Teacher form">
-                    <sheet>
-                        <h1>
-                            <label for="name" class="oe_edit_only" />
-                            <field name="name" />
-                        </h1>
-                        <notebook>
-                            <page string="Data">
-                                <group col="4" colspan="2">
-                                    <field name="email"/>
-                                    <field name="id_number"/>
-                                    <field name="phone"/>
-                                    <field name="membership_id"/>
-                                </group>
-                                <group colspan="4">
-                                    <field name="address"/>
-                                </group>
-                            </page>
-                            <page string="Sessions">
-                                <group>
-                                    <field name="session_ids" nolabel="1"/>
-                                </group>
-                            </page>
-                            <page string="Classes">
-                                <group>
-                                    <field name="class_ids" nolabel="1"/>
-                                </group>
-                            </page>
-                        </notebook>
-                    </sheet>
-                </form>
+                <xpath expr="//notebook]" position="after">
+                    <page string="Classes">
+                        <field name="class_ids" string="Number of ideas"/>
+                    </page>
+                </xpath>
             </field>
         </record>
 
