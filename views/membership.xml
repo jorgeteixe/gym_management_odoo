@@ -21,11 +21,13 @@
                         </h1>
                         <notebook>
                             <page string="Data">
-                                <group>
-                                    <field name="title"/>
+                                <group col="4" colspan="2">
+                                    <field name="title" />
+                                    <field name="currency_id" invisible="1" />
+                                    <field name="price" widget="monetary" />
+                                </group>
+                                <group colspan="4">
                                     <field name="description"/>
-                                    <field name="currency_id" invisible="1"/>
-                                    <field name="price" widget="monetary"/>
                                 </group>
                             </page>
                             <page string="Subscribers">
