@@ -21,7 +21,7 @@
                         </h1>
                         <notebook>
                             <page string="Data">
-                                <group>
+                                <group col="4" colspan="4">
                                     <field name="title"/>
                                     <field name="currency_id" invisible="1"/>
                                     <field name="price" widget="monetary"/>
@@ -30,7 +30,7 @@
                             </page>
                             <page string="Sessions">
                                 <group>
-                                    <field name="session_ids"/>
+                                    <field name="session_ids" nolabel="1"/>
                                 </group>
                             </page>
                         </notebook>
