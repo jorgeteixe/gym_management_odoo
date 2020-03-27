@@ -70,15 +70,13 @@
         </record>
 
 
-        <record model="ir.filters" id="today_sessions_filter">
-            <field name="name">Today sessions</field>
+        <record model="ir.filters" id="group_by_class_filter">
+            <field name="name">Group by class</field>
             <field name="model_id">gym.session</field>
             <field name="context">{'group_by': ['class_id']}</field>
             <field name="is_default">true</field>
             <field name="active">true</field>
             <field name="sort">[]</field>
-            <!--<field name="domain">[('start_date.strftime("%%Y-%%m-%%d")', '=', 'context_today().strftime("%%Y-%%m-%%d")')]</field>-->
-            <field name="user_id"></field>
             <field name="action_id" eval="ref('session_list_action')"/>
         </record>
 
