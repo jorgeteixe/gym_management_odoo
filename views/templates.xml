@@ -1,19 +1,19 @@
 <odoo>
     <data>
         <record model="gym.membership" id="free_membership">
-            <fields name="title">Free</fields>
-            <fields name="description">Free membership for teachers and employees.</fields>
-            <fields name="price">0</fields>
+            <field name="title">Free</field>
+            <field name="description">Free membership for teachers and employees.</field>
+            <field name="price">0</field>
         </record>
         <record model="gym.membership" id="normal_membership">
-            <fields name="title">Normal</fields>
-            <fields name="description">Normal membership for subscribers</fields>
-            <fields name="price">39.9</fields>
+            <field name="title">Normal</field>
+            <field name="description">Normal membership for subscribers</field>
+            <field name="price">39.9</field>
         </record>
         <record model="gym.membership" id="special_membership">
-            <fields name="title">Special</fields>
-            <fields name="description">Special membership with 50% discount for families and similar.</fields>
-            <fields name="price">19.9</fields>
+            <field name="title">Special</field>
+            <field name="description">Special membership with 50% discount for families and similar.</field>
+            <field name="price">19.9</field>
         </record>
     </data>
 </odoo>
