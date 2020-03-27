@@ -15,7 +15,7 @@
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="arch" type="xml">
-                <page string="More info" position="replace">
+                <page id="toReplace" position="replace">
                     <separator string="Sessions"/>
                     <group>
                         <field name="session_ids" nolabel="1"/>
