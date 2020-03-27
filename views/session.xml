@@ -78,8 +78,8 @@
             <field name="sort">[]</field>
             <field name="domain">[('start_date', '&gt;=', 'context_today()')]</field>
             <field name="user_id"></field>
-            <field name="action_id" eval="ref('gym.session_list_action')"/>
+            <field name="action_id" eval="ref('session_list_action')"/>
         </record>
-        
+
     </data>
 </odoo>
