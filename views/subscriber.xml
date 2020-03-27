@@ -32,7 +32,8 @@
                                     <field name="address"/>
                                 </group>
                             </page>
-                            <page id="sessions" string="Sessions">
+                            <page string="More info">
+                                <separator string="Sessions" />
                                 <group>
                                     <field name="session_ids" nolabel="1"/>
                                 </group>

@@ -15,18 +15,16 @@
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//page[@id='sessions']" position="replace">
-                    <page string="More info">
-                        <separator string="Classes"/>
-                        <group>
-                            <field name="class_ids" nolabel="1" />
-                        </group>
-                        <separator string="Sessions"/>
-                        <group>
-                            <field name="session_ids" nolabel="1" />
-                        </group>
-                    </page>
-                </xpath>
+                <page string="More info" position="replace">
+                    <separator string="Sessions"/>
+                    <group>
+                        <field name="session_ids" nolabel="1"/>
+                    </group>
+                    <separator string="Sessions"/>
+                    <group>
+                        <field name="session_ids" nolabel="1"/>
+                    </group>
+                </page>
             </field>
         </record>
 
