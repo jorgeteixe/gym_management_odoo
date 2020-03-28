@@ -53,7 +53,7 @@
             <field name="sequence" eval="1"/>
             <field name="view_mode">tree</field>
             <field name="view_id" ref="teacher_tree_view"/>
-            <field name="act_window_id" ref="teacher_tree_view"/>
+            <field name="act_window_id" ref="teacher_list_action"/>
         </record>
 
     </data>
