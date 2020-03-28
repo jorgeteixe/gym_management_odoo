@@ -10,7 +10,7 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="teacher_form_view">
+        <!--<record model="ir.ui.view" id="teacher_form_view">
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
@@ -21,7 +21,7 @@
                     </page>
                 </notebook>
             </field>
-        </record>
+        </record>-->
 
         <record model="ir.ui.view" id="teacher_tree_view">
             <field name="name">teacher.tree</field>
@@ -45,12 +45,12 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window.view" id="select_view_form_teacher">
+        <!-- <record model="ir.actions.act_window.view" id="select_view_form_teacher">
             <field name="sequence" eval="1"/>
             <field name="view_mode">form</field>
             <field name="view_id" ref="teacher_form_view"/>
             <field name="act_window_id" ref="teacher_list_action"/>
-        </record>
+        </record> -->
 
         <record model="ir.actions.act_window.view" id="select_view_tree_teacher">
             <field name="sequence" eval="1"/>
