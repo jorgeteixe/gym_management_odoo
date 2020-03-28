@@ -26,6 +26,7 @@
         <record model="ir.ui.view" id="teacher_tree_view">
             <field name="name">teacher.tree</field>
             <field name="model">gym.teacher</field>
+            <field name="inherit_id" ref="subscriber_tree_view"/>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
