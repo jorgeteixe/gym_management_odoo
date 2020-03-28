@@ -14,6 +14,13 @@
             <field name="name">teacher.form</field>
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_form_view"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Classes">
+                        <field name="class_ids" nolabel="1"/>
+                    </page>
+                </notebook>
+            </field>
         </record>
 
         <record model="ir.ui.view" id="teacher_tree_view">
@@ -21,12 +28,7 @@
             <field name="model">gym.teacher</field>
             <field name="inherit_id" ref="subscriber_tree_view"/>
             <field name="arch" type="xml">
-                <tree>
-                    <field name="name"/>
-                    <field name="email"/>
-                    <field name="id_number"/>
-                    <field name="membership_id"/>
-                </tree>
+                <xpath expr="//field[@name='membership_id']" position="replace" />
             </field>
         </record>
 
